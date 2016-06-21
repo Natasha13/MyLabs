@@ -1,0 +1,27 @@
+function fillArray(){
+    var arr=[]
+    
+     for (var i=1;i<6;i++){
+         name = prompt('Enter name',"");
+         arr.push(name);
+        } 
+     console.log(arr);     
+     return arr;
+     }
+     
+
+     
+function Compare(arr){
+ var  name=prompt('Enter your name',"no name");   
+    var flag=0;
+     for (var i=1;i<6;i++){
+         if (arr[i]===name) {
+             flag=1}
+        } 
+     
+      if (flag===1){alert(name+', вы успешно вошли')}    
+       else {alert("Нет такого имени в массиве")}
+  }    
+
+   
+console.log(Compare(fillArray(),name))
